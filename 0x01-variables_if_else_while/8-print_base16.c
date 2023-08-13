@@ -1,26 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints numbers between 0 to 9 and letters between a to f.
  *
- * Description: print numbers of base16 in lowercase
- *
- * Return: Always 0 (success)
-*/
-
- int main(void)
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-	int digit = 48; /*48 decimal rep of 0*/
+	int i;
 
-	while (digit <= 102)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(digit);
-
-		if (digit == 57)
-			digit += 39;
-		digit++;
-	}	
+		putchar(i);
+	}
+	for (i = 97; i < 103; i++)
+	{
+		putchar(i);
+	}
 	putchar('\n');
-
 	return (0);
 }
+
